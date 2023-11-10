@@ -1,1 +1,13 @@
-<p>login-page works!</p>
+<div class="login">
+  <div class="top"></div>
+  <div class="bottom"></div>
+
+  <div class="login__form">
+    <img src="../../../assets/images/avatar.png" alt="" />
+    <div class="login__form__control">
+      <input type="text" placeholder="Email or Username" [(ngModel)]="email" />
+      <input type="password" placeholder="Password" [(ngModel)]="password" />
+      <button class="defaultBtn" (click)="loginFn()">Login</button>
+    </div>
+  </div>
+</div>
