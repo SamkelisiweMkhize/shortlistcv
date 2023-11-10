@@ -1,4 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+:root {
+  --blue100: #04afb1;
+  --blue150: #017d7f;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.defaultBtn {
+  background-color: var(--blue100);
+  padding: 0.3rem 1.5rem;
+  color: whitesmoke;
+  border: solid 2px var(--blue150);
+  font-weight: bold;
+}
+
+.defaultBtn:hover {
+  background-color: var(--blue150);
+  color: white;
+}
+
+// DESKTOP CSS
+@media (min-width: 640px) {
+}
