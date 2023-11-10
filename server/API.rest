@@ -1,0 +1,12 @@
+### test if the server is UP
+GET http://localhost:9000
+
+
+### Login 
+POST http://localhost:9000/api/users/login
+content-type: application/json
+
+{
+    "email": "dudu",
+    "password": "my man"
+}
