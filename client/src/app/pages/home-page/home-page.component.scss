@@ -4,3 +4,13 @@
     margin-left: 18rem;
     margin-top: 9rem;
 }
+
+
+@media screen and (max-width: 576px) {
+      .input-group {
+        width: 23rem;
+        align-items: center;
+        margin-left: 1px;
+      }
+    }
+      
