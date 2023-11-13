@@ -1,10 +1,30 @@
 <div class="row">
-    <div class="display-5 myColorText">Welcome {{user?.name | titlecase}}.</div>
+    <div class="display-5 text-center myColorText">Welcome {{user?.name | titlecase}}</div>
 </div>
 
 <div class="input-group mt-5">
-    <input type="text" class="form-control text-body-tertiary shadow-none" placeholder="Search...."
+    <input type="text" class="form-control text-body-tertiary shadow-none searchBox" placeholder="Search...."
         aria-label="Recipient's username with two button addons">
-    <button class="btn btn-outline-primary" type="button"><i class="bi bi-plus-circle"></i></button>
-    <button class="btn btn-outline-primary" type="button"><i class="bi bi-search"></i></button> 
+    <button class="btn myOutlineButton" type="button"><i class="bi bi-plus-circle"></i></button>
+    <button class="btn myOutlineButton" type="button"><i class="bi bi-search"></i></button> 
 </div> 
+
+<div class="row my-5 mx-3 justify-content-center">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">available candidates</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">shortlisted candidates</p>
+            </div>
+        </div>
+    </div>
+</div>

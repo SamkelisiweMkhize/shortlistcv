@@ -29,6 +29,18 @@ body {
   color: var(--blue100);
 }
 
+.myOutlineButton {
+  border: solid 1px var(--blue100);
+  color: var(--blue100);
+} 
+
+.myOutlineButton:hover {
+  background-color: var(--blue100);
+  color: white;
+}
+
+
+
 // DESKTOP CSS
 @media (min-width: 640px) {
 }

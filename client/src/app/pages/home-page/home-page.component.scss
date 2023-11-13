@@ -1,16 +1,21 @@
 .input-group {
-    width: 50rem;
-    align-items: center;
-    margin-left: 18rem;
-    margin-top: 9rem;
+  width: 50rem;
+  align-items: center;
+  margin-left: 18rem;
+  margin-top: 9rem;
 }
 
+.searchBox {
+  border: solid 1px var(--blue100);
+}
+.searchBox:focus {
+  border: solid 1px var(--blue100);
+}
 
 @media screen and (max-width: 576px) {
-      .input-group {
-        width: 23rem;
-        align-items: center;
-        margin-left: 1px;
-      }
-    }
-      
+  .input-group {
+    width: 23rem;
+    align-items: center;
+    margin-left: 1px;
+  }
+}
