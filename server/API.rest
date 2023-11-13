@@ -7,6 +7,17 @@ POST http://localhost:9000/api/users/login
 content-type: application/json
 
 {
-    "email": "dudu",
-    "password": "my man"
+    "email": "dudu@gmail.com",
+    "password": "123456"
+}
+
+
+### Add new user
+POST http://localhost:9000/api/users/register
+content-type: application/json
+
+{
+    "email": "dudu@gmail.com",
+    "name": "dudu",
+    "password": "123456"
 }
