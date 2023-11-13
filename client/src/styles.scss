@@ -25,6 +25,10 @@ body {
   color: white;
 }
 
+.myColorText {
+  color: var(--blue100);
+}
+
 // DESKTOP CSS
 @media (min-width: 640px) {
 }

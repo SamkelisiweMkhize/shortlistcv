@@ -38,7 +38,7 @@
               >Shortlist</a
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item" *ngIf="user?.isAdmin">
             <a
               class="nav-link"
               routerLink="/private/admin"

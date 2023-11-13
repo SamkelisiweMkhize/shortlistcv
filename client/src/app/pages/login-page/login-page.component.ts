@@ -24,10 +24,19 @@ export class LoginPageComponent {
       return;
     }
 
-    this.authService.loginFn(this.email, this.password).subscribe((data) => {
-      this.authService.setUserData(data);
-      this.alertService.success(`Welcome ${data.name}`);
-      this.router.navigate(['/private/home']);
-    });
+    this.authService
+      .loginFn(this.email, this.password)
+      .subscribe((data: any) => {
+        console.log(data);
+
+        if (!data?._id) {
+          this.alertService.error(data.message);
+          return;
+        }
+
+        this.authService.setUserData(data);
+        this.alertService.success(`Welcome ${data.name}`);
+        this.router.navigate(['/private/home']);
+      });
   }
 }

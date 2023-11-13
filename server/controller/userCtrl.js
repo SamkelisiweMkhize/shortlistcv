@@ -41,19 +41,30 @@ const userLogin = async (req, res) => {
 
 
 const userRegister = async (req, res) => {
-  const { email, password, name } = req.body
+  const { email, password, name, isAdmin } = req.body
 
   if (!name || !email || !password) {
     return res.json({ message: 'All fields are required!' })
   }
 
   try {
-    const user = new UserModel({ email, password, name })
-    await user.save()
 
-    res.json(user)
+    if (isAdmin) {
+      const user = new UserModel({ email, password, name, isAdmin })
+      await user.save()
+      return  res.json(user)
+    }else {
+      const user = new UserModel({ email, password, name })
+      await user.save()
+      return  res.json(user)
+    }
+
+    
+    
+
+   
   } catch (error) {
-
+    console.log(error)
     res.json({ error, message: 'please try again later' })
   }
 
